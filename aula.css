@@ -6,7 +6,9 @@ body {
      color: #234234;
      background-color: #1b5b16;
  }
- 
+  p {
+    margin: 0;
+  }
  span { 
      color: #04047d;
  }
@@ -29,6 +31,7 @@ body {
  #footer {
     height: 150px;
     background-color: darkred;
+    color: #ffffff;
  }
  .flex-row{
     display: flex;
