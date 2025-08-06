@@ -1,0 +1,40 @@
+body {
+    background-color: #ffffff;
+ }
+ 
+ h1 {
+     color: #234234;
+     background-color: #1b5b16;
+ }
+ 
+ span { 
+     color: #04047d;
+ }
+ #header {
+    height: 80px;
+    background-color: cyan;
+    display: flex; 
+    justify-content: flex-end;
+ }
+ #sidebar {
+    height: 400px;
+    width: 150px;
+    background-color: blue;
+ }
+ #content {
+    height: 400px;
+    width: 680px;
+    background-color: chartreuse;
+ }
+ #footer {
+    height: 150px;
+    background-color: darkred;
+ }
+ .flex-row{
+    display: flex;
+ }
+ #menu {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+ }
