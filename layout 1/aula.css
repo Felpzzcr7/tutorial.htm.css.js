@@ -12,8 +12,29 @@ body {
  span { 
      color: #04047d;
  }
+#centralizar {
+   display: flex;
+   width: 100%;
+   max-width: 2056px;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   }
+   
+ 
+ #centralizar2 {
+   display: flex;
+   max-width: 100%;
+   justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   }
+   
+ 
  #header {
     height: 80px;
+    width: 100%;
+    max-width: 2056px;
     background-color: rgb(185, 185, 185);
     display: flex; 
     justify-content: space-between;
@@ -24,24 +45,29 @@ body {
 
  }
  #sidebar {
-    height: 400px;
+    height: 550px;
     width: 150px;
     background-color: blue;
  }
  
 
  #content {
-    height: 400px;
-    width: 680px;
+    height: 550px;
+    width: 100%;
+    max-width: 2056px;
+    
     background-color: chartreuse;
  }
  #footer {
     height: 150px;
+    width: 100%;
+    max-width: 2056px;
     background-color: darkred;
     color: #ffffff;
  }
  .flex-row{
     display: flex;
+    width: 100%;
 
  }
  #menu {
