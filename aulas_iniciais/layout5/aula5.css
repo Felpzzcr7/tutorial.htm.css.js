@@ -32,7 +32,7 @@ span {
 #sidebar {
    height: 33vh;
    width: 210vh;
-   background-color: blue;
+   background-color: #acacac;
    display: flex; 
    justify-content: space-around;
    align-items: center;
@@ -43,7 +43,7 @@ span {
 #content {
    height: 33vh;
    width: 210vh;
-   background-color: chartreuse;
+   background-color: rgb(150, 150, 150);
    display: flex; 
    justify-content: space-around;
    align-items: center;
@@ -51,7 +51,7 @@ span {
 #footer {
    height: 33vh;
    width: 210vh;
-   background-color: rgb(172, 67, 199);
+   background-color: rgb(179, 179, 179);
    color: #ffffff;
    display: flex; 
    justify-content: space-around;
@@ -86,7 +86,7 @@ span {
 #foto {
    height: 200px;
    width: 200px;
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(102, 0, 0);
 }
 #texto{
    height: 50px;

@@ -1,9 +1,10 @@
 body {
     background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
  }
  
  h1 {
-     color: #234234;
+     color: #ffffff;
      
  }
   p {
@@ -30,44 +31,44 @@ body {
    flex-direction: column;
    }
    
- 
+ .flexrow{
+   display: flex;
+   gap: 20px;
+ }
  #header {
     height: 80px;
     width: 100%;
     max-width: 2056px;
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(0, 0, 0);
     display: flex; 
     justify-content: space-between;
- }
-
+ } 
  #header img {
-   height: 90px;
+   height: 60px;
+   width: 60px;
 
  }
- #sidebar {
-    height: 550px;
-    width: 150px;
-    background-color: blue;
- }
- 
+
 
  #content {
-    height: 550px;
+    height: 100%;
     width: 100%;
+    min-height: 550px;
     max-width: 2056px;
-    
-    background-color: chartreuse;
+    background-color: rgb(131, 131, 131);
+   
  }
  #footer {
     height: 150px;
     width: 100%;
     max-width: 2056px;
-    background-color: darkred;
+    background-color: rgb(0, 0, 0);
     color: #ffffff;
  }
  .flex-row{
     display: flex;
     width: 100%;
+    
 
  }
  #menu {
