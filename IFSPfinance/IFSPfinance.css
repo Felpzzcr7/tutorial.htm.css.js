@@ -67,7 +67,7 @@ body {
   
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover, .active{
   color: #ff5e00;
   border-bottom: 2px solid #ff5e00;
 }
@@ -76,7 +76,7 @@ header nav ul li a:hover{
     width: 100%;
     min-height: 720px;
     max-width: 2056px;
-    background-color: rgb(131, 131, 131);
+    background-color: rgb(49, 49, 49);
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -123,7 +123,7 @@ header nav ul li a:hover{
   height: 50px;
   min-height: 50px;
   width: 400px;
-  background-color: rgb(209, 135, 74);
+  background-color: #ff5e00;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   display: flex;
@@ -143,8 +143,22 @@ header nav ul li a:hover{
   height: 40px;
   width: 40px;
  }
- .variacao{
+ .variacaop{
   display: flex;
   justify-content: end;
   padding: 0 10px;
+  color: rgb(102, 131, 73);
  }
+ .variacaon{
+  display: flex;
+  justify-content: end;
+  padding: 0 10px;
+  color: rgb(255, 0, 0);
+ }
+.meio {
+ margin:0 auto;
+}
+div .meio p {
+  font-size: 50px;
+  color:  rgb(102, 131, 73);
+}
