@@ -57,6 +57,7 @@ body {
  header nav ul {
   display: flex;
   gap: 20px;
+  align-items: center;
  
  }
 
@@ -71,6 +72,15 @@ header nav ul li a:hover, .active{
   color: #ff5e00;
   border-bottom: 2px solid #ff5e00;
 }
+header nav ul li button {
+  color: #ffffff;
+  background-color: #ff5e00;
+  padding: 10px 50px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  
+}
  #content {
     height: 100%;
     width: 100%;
@@ -79,7 +89,6 @@ header nav ul li a:hover, .active{
     background-color: rgb(49, 49, 49);
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
 
    
  }
@@ -107,6 +116,12 @@ header nav ul li a:hover, .active{
  #menu a {
    color: aliceblue;
    text-decoration: none;
+ }
+ #cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
  }
 
  .carteira {
@@ -161,4 +176,48 @@ header nav ul li a:hover, .active{
 div .meio p {
   font-size: 50px;
   color:  rgb(102, 131, 73);
+}
+.modal{
+  background-color: #000000c0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal main {
+  background-color: #ffffff;
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.modal main h1 {
+  color: #000000;
+
+}
+.modal main form{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+}
+.modal main label {
+  margin: 10px 0 0 0;
+}
+.modal main form input[ type = "text"], .modal main form select{
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.modal main form input[ type = "submit"], .modal main form button {
+  background-color: #ff5e00;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 20px 0;
+  cursor: pointer;
+
 }
