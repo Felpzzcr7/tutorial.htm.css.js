@@ -72,7 +72,7 @@ function deletecard(event){
     carteira.remove()
 }
 function openeditcard(event){
-    ope
+    openmodal('#edit')
     
     const carteira= event.target.closest(".carteira")
 
