@@ -121,7 +121,7 @@ header nav ul li button {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+
  }
 
  .carteira {
@@ -132,6 +132,7 @@ header nav ul li button {
   border-radius: 20px;
   margin: 20px;
   flex-direction: column;
+  position: relative;
  
  }
  .ticker {
@@ -172,6 +173,7 @@ header nav ul li button {
  }
 .meio {
  margin:0 auto;
+ display: flex;
 }
 div .meio p {
   font-size: 50px;
@@ -212,12 +214,30 @@ div .meio p {
   border-radius: 5px;
   font-size: 18px;
 }
-.modal main form input[ type = "submit"], .modal main form button {
+.modal main form input[ type = "submit"], button {
   background-color: #ff5e00;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 18px;
   margin: 20px 0;
   cursor: pointer;
 
+
+}
+.buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #00000098;
+  align-items: center;
+  display: none;
+  justify-content: center;
+  border-radius: 20px;
+  gap: 20px;
+}
+.buttons button{
+  height: 50px;
+  width: 80px;
 }
