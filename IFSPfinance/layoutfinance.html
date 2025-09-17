@@ -44,18 +44,13 @@
                             <h2>NYSE</h2>
                         </div>
                         <div class="espacador">
-                            <p>Quantidade:</p>
+                            <span>Ativos:</span>
                             <p>31</p>
 
                         </div>
 
-                        <div class="espacador">
-
-
-                        </div>
-
                         <div class="meio">
-                            <p> U$ <p> 199,97 </p> </p>
+                            <p>U$ <span>199,97</span></p>
 
                         </div>
 
@@ -65,8 +60,8 @@
                             <p>+U$19,00</p>
 
                         </div>
-                        <div class="espacador">
-                            <p>Posição:</p>
+                        <div class="espacador_footer">
+                            <span>Posição:</span>
                             <p>U$6.199,07</p>
 
                         </div>
@@ -82,18 +77,12 @@
                             <h2>NASDAQ</h2>
                         </div>
                         <div class="espacador">
-                            <p>Quantidade:</p>
+                            <span>Ativos:</span>
                             <p>10</p>
 
                         </div>
-
-                        <div class="espacador">
-
-
-                        </div>
-
                         <div class="meio">
-                            <p style="color: red;">U$127,75 </p>
+                            <p style="color: red;"> U$<span>127,75</span> </p>
 
                         </div>
 
@@ -103,8 +92,8 @@
                             <p>-U$15,00</p>
 
                         </div>
-                        <div class="espacador">
-                            <p>Posição:</p>
+                        <div class="espacador_footer">
+                            <span>Posição:</span>
                             <p>U$1.277,50</p>
 
                         </div>
@@ -132,7 +121,7 @@
                             <option value="NYSE"> NYSE</option>
                         </select>
                         <label for="ativos">Ativos:</label>
-                        <input type="text" id="Ativos" name="Ativos">
+                        <input type="text" id="ativos" name="Ativos">
                         <input type="submit" value="Cadastrar">
                         <button type="button" onclick="closemodal('#add')"> Fechar</button>
                     </form>
@@ -142,17 +131,18 @@
                 <main>
                     <h1> Editar</h1>
                     <form onsubmit="editticker(event)">
-                        <label for="ticker">ticker:</label>
-                        <input type="text" id="editticker" name="ticker">
-                        <label for="valor">valor:</label>
-                        <input type="text" id="editvalor" name="valor">
-                        <label for="bolsa">bolsa:</label>
+                        <input type="hidden" id="idcard" name="idcard">
+                        <label for="editticker">ticker:</label>
+                        <input type="text" id="editticker" name="ticker">                     
+                        <label for="editbolsa">bolsa:</label>
                         <select name="bolsa" id="editbolsa">
                             <option value="Nasdaq"> Nasdaq</option>
                             <option value="NYSE"> NYSE</option>
                         </select>
-                        <label for="ativos">Ativos:</label>
-                        <input type="text" id="editAtivos" name="Ativos">
+                        <label for="editvalor">valor:</label>
+                        <input type="text" id="editvalor" name="valor">
+                        <label for="editativos">Ativos:</label>
+                        <input type="text" id="editativos" name="Ativos">
                         <input type="submit" value="Editar">
                         <button type="button" onclick="closemodal('#edit')"> Fechar</button>
                     </form>

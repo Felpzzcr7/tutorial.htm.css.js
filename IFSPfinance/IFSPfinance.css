@@ -5,7 +5,7 @@ body {
  }
  
  h1 {
-     color: #000000;
+     color: #ffffff;
      
  }
   p {
@@ -13,7 +13,8 @@ body {
     font-size: 24px;
   }
  span { 
-     color: #04047d;
+     color: #000000;
+     font-size: 24px;
  }
 #centralizar {
    display: flex;
@@ -89,6 +90,7 @@ header nav ul li button {
     background-color: rgb(49, 49, 49);
     display: flex;
     gap: 20px;
+    color: #ffffff;
 
    
  }
@@ -149,6 +151,17 @@ header nav ul li button {
   box-sizing: border-box;
  }
  .espacador{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 0 10px;
+  
+ }
+ .meio span{
+  font-size: 50px;
+  
+ }
+ .espacador_footer{
   display: flex;
   justify-content: space-between;
   margin: 5px 0;
@@ -240,4 +253,19 @@ div .meio p {
 .buttons button{
   height: 50px;
   width: 80px;
+}
+
+table, td, th{
+border: 2px solid #ffffff
+
+}
+
+table{
+width: 360px;
+border-collapse: collapse;
+color: #ffffff;
+}
+
+td{
+padding: 5px 5px;
 }

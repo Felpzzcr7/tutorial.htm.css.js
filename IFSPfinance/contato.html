@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IFFinance</title>
+    <link rel="stylesheet" href="IFSPfinance.css" />
+    <link rel="icon" href="img/logo.svg
+        ">
+    <style>
+        h1 {
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="centralizar2">
+        <div id="centralizar">
+            <header>
+                <div class="flexrow">
+                    <img src="img/logo.svg" alt="">
+                    <h1> <span style="color: #ff5e00;"> IF</span>Finance </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li> <a href="layoutfinance.html" class="active">home</a></li>
+                        <li> <a href="contato.html">contato</a></li>
+                        <li> <a href="quemsomos.html">quem somos</a></li>
+                        <li><button onclick="openmodal('#add')"> Adicionar ação</button></li>
+
+                    </ul>
+                </nav>
+
+
+            </header>
+
+
+            <main id="content">
+
+                <h1>Contato</h1>
+                
+                <form>
+                   <label for="nome">Nome:</label>
+                   <input type="text" id="nome" name="nome">
+                   <br>
+                   <label for="nome">Senha:</label>
+                   <input type="password" id="pass" name="pass">
+                    <br>
+                   <input type="checkbox" id="news" name="news"> 
+                   <label for="news">Deseja receber nossos emails de novidades?</label>
+                   <br>
+                   <label for="message">Mensagem:</label>
+                   <br>
+                   <textarea id="message" name="message"></textarea>
+                   <p>Qual sua bolsa preferida</p>
+                   <input type="radio" id="nyse" name="bolsa" value="NYSE"> <label for="nyse">NYSE</label><br> 
+                   <input type="radio" id="Nasdaq" name="bolsa" value="Nasdaq"> <label for="Nasdaq">Nasdaq</label><br>
+                    <input type="radio" id="B3" name="bolsa" value="B3"> <label for="B3">B3</label><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </main>
+
+            <div id="footer">
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+<script src="JS/Main.js"> </script>
+
+</html>
