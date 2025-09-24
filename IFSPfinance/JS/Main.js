@@ -14,38 +14,39 @@ function addticker (event) {
     const ativos= event.target.ativos.value
     const valor= event.target.valor.value
     const card = `
-    <div class="carteira"  onmouseenter="showbuttons(event)" onmouseleave="hidebuttons(event)">
+    <div class="carteira" onmouseenter="showbuttons(event)" onmouseleave="hidebuttons(event)">
                         <div class="ticker">
-                            <p>${ticker}</p>
-                            <P>${bolsa}</P>
+                            <h1>${ticker}</h1>
+                            <h2>${bolsa}</h2>
                         </div>
                         <div class="espacador">
-                            <p>Quantidade:</p>
+                            <span>Ativos:</span>
                             <p>${ativos}</p>
 
                         </div>
 
                         <div class="meio">
-                            <p> U$${valor} </p>
+                            <p>U$ <span>${valor}</span></p>
 
                         </div>
 
                         <div class="variacaop">
 
                             <img src="img/setaverde.png" alt="">
-                            <p>+U$19,00</p>
+                            <p></p>
 
                         </div>
-                        <div class="espacador">
-                            <p>Posição:</p>
+                        <div class="espacador_footer">
+                            <span>Posição:</span>
                             <p>U$${valor * ativos}</p>
 
                         </div>
                         <div class="buttons">
-                            <button type="button" onclick=""> editar</button>
+                            <button type="button" onclick="openeditcard(event)"> editar</button>
                             <button type="button" onclick="deletecard(event)"> excluir</button>
+
+                        </div>
                     </div>
-    
     
     `
     const cards = document.querySelector("#cards")
